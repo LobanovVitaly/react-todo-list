@@ -1,0 +1,115 @@
+.toDoInputWrapper{
+	display: flex;
+	gap: 10px;
+	margin-bottom: 30px;
+	padding: 20px;
+	background: #1dd59ba3;
+}
+.toDoInputWrapper input{
+	flex-grow: 1;
+	padding: 10px;
+}
+.toDoInputWrapper button{
+	padding: 10px;
+    background: #d51d1d;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+.toDoInputWrapper button:hover{
+	background: #fff;
+	border-color: #d51d1d;
+	color: #d51d1d;
+}
+
+.toDoItem{
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	position: relative;
+	padding: 20px 20px 20px 40px;
+	background: #fdfcd2;
+	cursor: pointer;
+	transition: .3s;
+}
+.toDoItem:nth-child(odd){
+	background: #d1ffdb;
+}
+.toDoItem:hover{
+	background: #e5e5e5;
+}
+.toDoItem.completed{
+	background: #ababab;
+}
+.toDoItem.completed::before{
+	content:'';
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	height: 15px;
+    width: 7px;
+	border-right: 2px solid #d51d1d;
+	border-bottom: 2px solid #d51d1d;
+	transform: rotate(45deg);
+}
+
+.toDoItem p{
+	margin: 0;
+}
+
+.toDoItem.completed p{
+	text-decoration: line-through;
+}
+
+.deleteToDoItemBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    margin-left: auto;
+    border: none;
+    background: #8080804f;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.toDoListButtons{
+	display: flex;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.toDoListButtons button{
+	padding: 10px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #fff;
+    transition: .3s;
+}
+.toDoListButtons button.completeBtn{
+	background: #1dd59ba3;
+}
+.toDoListButtons button.completeBtn:hover{
+	background: #fff;
+	border-color: #1dd59ba3;
+	color: #1dd59ba3;
+}
+.toDoListButtons button.deleteBtn{
+	background: #d51d1d;
+}
+.toDoListButtons button.deleteBtn:hover{
+	background: #fff;
+	border-color: #d51d1d;
+	color: #d51d1d;
+}
+.toDoListButtons button.clearSelected{
+	margin-right: auto;
+	background: #3EF2FD;
+}
+.toDoListButtons button.clearSelected:hover{
+	background: #fff;
+	border-color: #3EF2FD;
+	color: #3EF2FD;
+}

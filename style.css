@@ -1,0 +1,42 @@
+.todoListWrapper{
+	width: 400px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+
+.todoInputWrapper{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.todoInput{
+	margin-right: 20px;
+}
+
+.todoItem{
+	display: flex;
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #000;
+	border-radius: 5px;
+}
+.todoItem span{
+	margin-right: auto;
+}
+
+
+.todoItem .btn{
+	padding: 10px;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
+.todoItem .btn.red{
+	background: red;
+}
+.todoItem .btn.green{
+	background: green;
+}
+.todoItem .btn.blue{
+	background: blue;
+}
